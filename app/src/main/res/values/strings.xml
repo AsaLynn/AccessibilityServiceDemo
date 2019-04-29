@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AccessibilityServiceDemo</string>
+    <string name="plug_name">监控插件</string>
+</resources>
