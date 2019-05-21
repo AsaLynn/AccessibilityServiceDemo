@@ -52,6 +52,17 @@ public class PlugAccessibilityService extends AccessibilityService {
         Log.i(TAG, "onAccessibilityEvent: -->" + eventType);
         //根据时间回调类型进行处理.
         switch (eventType) {
+            case AccessibilityEvent.TYPE_VIEW_CLICKED:
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
+//                    List<AccessibilityNodeInfo> nodeInfos = getRootInActiveWindow().findAccessibilityNodeInfosByViewId("com.zxn.accessibility:id/btn_click");
+//                    AccessibilityNodeInfo nodeInfo = nodeInfos.get(0);
+//                    if (null != nodeInfo) {
+//                        String text = nodeInfo.getText().toString();
+//                        Log.i(TAG, "onAccessibilityEvent: " + text);
+//                        Toast.makeText(this, "text:" + text, Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+                break;
             //通知栏变化时
             case AccessibilityEvent.TYPE_NOTIFICATION_STATE_CHANGED:
                 break;

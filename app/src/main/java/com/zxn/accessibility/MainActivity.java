@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == R.id.tv_open) {
             PlugAccessibilityService.actionAccessibilitySettings(this);
+        } else if (view.getId() == R.id.btn_click) {
+            finish();
         }
     }
 
@@ -29,5 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvOpen = (TextView) findViewById(R.id.tv_open);
         tvOpen.setOnClickListener(MainActivity.this);
         etInput = (EditText) findViewById(R.id.et_input);
+        findViewById(R.id.btn_click).setOnClickListener(this);
     }
 }
